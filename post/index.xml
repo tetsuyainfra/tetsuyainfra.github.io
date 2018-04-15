@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>(c) 2018 tetsuyainfra</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tetsuyainfra.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugoでmermaid.jsをつかう</title>
+      <link>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</guid>
+      <description>1 chortcodeを使う vjeantet/hugo-theme-docdockより &amp;lt;script defer src=&amp;quot;https://unpkg.com/mermaid@7.1.2/dist/mermaid.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer&amp;gt;mermaid.initialize({startOnLoad:true});&amp;lt;/script&amp;gt; &amp;lt;div class=&amp;quot;mermaid&amp;quot; align=&amp;quot;{{ if .Get &amp;quot;align&amp;quot; }}{{ .Get &amp;quot;align&amp;quot; }}{{ else }}center{{ end }}&amp;quot; &amp;gt;{{ safeHTML .Inner }}&amp;lt;/div&amp;gt; {{ &amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt; }} //</description>
+    </item>
+    
+    <item>
+      <title>ひな形を使ってWebappを作成する</title>
+      <link>https://tetsuyainfra.github.io/post/create-new-webapp/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/post/create-new-webapp/</guid>
+      <description>もくじ 各種公式ツールを使う 1.1. React create-react-app 1.2. Vue.js vue-cli 1.3. Angular angular-cli 1.4. express express-generator scaffoldツールを使う 2.2 Yeoman 1.1 React</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>

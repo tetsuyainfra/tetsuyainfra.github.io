@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -7,7 +8,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.37.1" />
 
-  <title>Getting Started with Hugo &middot; tetsuyainfra 日記</title>
+  <title>研究時間について &middot; tetsuyainfra 日記</title>
 
   
   
@@ -210,7 +211,7 @@
 
 
 <div class="header">
-  <h1>Getting Started with Hugo</h1>
+  <h1>研究時間について</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -219,119 +220,228 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Apr 2014, 00:00</time>
+    <time>14 Apr 2018, 06:29</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://tetsuyainfra.github.io/tags/go">go</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://tetsuyainfra.github.io/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://tetsuyainfra.github.io/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://tetsuyainfra.github.io/tags/development">development</a>
-    
-  </div>
-  
   
 
 </div>
 
   
 
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<h1 id="参考">参考</h1>
 
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
+<p><a href="https://wiki.factorio.com/Research">https://wiki.factorio.com/Research</a></p>
 
-<p>Save it somewhere specific as we will be using it in the next step.</p>
+<h2 id="研究に必要なコスト">研究に必要なコスト</h2>
 
-<p>More complete instructions are available at <a href="https://tetsuyainfra.github.io/overview/installing/">installing hugo</a></p>
-
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-
-<p>Follow the following steps:</p>
-
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
-</ol>
-
-<p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
+<pre><code>time = (time cost * units / labs) seconds
 </code></pre>
 
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<h3 id="計算例">計算例</h3>
 
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+<table>
+<thead>
+<tr>
+<th>研究</th>
+<th>所要時間</th>
+<th>素材</th>
+<th>研究時間</th>
+</tr>
+</thead>
 
-<p>Stop the Hugo process by hitting ctrl+c.</p>
+<tbody>
+<tr>
+<td>自動化技術</td>
+<td>10</td>
+<td>赤x10</td>
+<td><strong>100</strong></td>
+</tr>
 
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<tr>
+<td>自動化技術2</td>
+<td>5</td>
+<td>赤x80</td>
+<td><strong>400</strong></td>
+</tr>
 
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
+<tr>
+<td>搬送1</td>
+<td>15</td>
+<td>赤x20</td>
+<td><strong>300</strong></td>
+</tr>
 
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<tr>
+<td>搬送1</td>
+<td>30</td>
+<td>赤緑x200</td>
+<td><strong>6000</strong></td>
+</tr>
 
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
+<tr>
+<td>ロケットサイロ</td>
+<td>60</td>
+<td>赤緑青クロ紫黄x1000</td>
+<td><strong>60000</strong></td>
+</tr>
+</tbody>
+</table>
 
-<p>Change and save this file.. Notice what happened in your terminal.</p>
+<p>クリアめがけてとんでもない数が必要なんだなぁ</p>
 
-<pre><code>&gt; Change detected, rebuilding site
+<h3 id="各サイエンスパックの生産個数">各サイエンスパックの生産個数</h3>
 
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
+<ul>
+<li>研究毎に同数づつ必要なので出力が同数になるべきである
 
-<p>Refresh the browser and observe that the typo is now fixed.</p>
+<ul>
+<li>加えて言うなら1秒1個になるように計算すると楽</li>
+</ul></li>
+</ul>
 
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>製作時間</th>
+<th>製作速度</th>
+<th>製作単位</th>
+<th>必要時間</th>
+<th>生産数/min</th>
+</tr>
+</thead>
 
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<tbody>
+<tr>
+<td>赤パック</td>
+<td>5</td>
+<td>0.5(機械1)</td>
+<td>1</td>
+<td><sup>5</sup>&frasl;<sub>0</sub>.5=10</td>
+<td>6</td>
+</tr>
 
-<p>The best way to learn something is to play with it.</p>
+<tr>
+<td>緑パック</td>
+<td>6</td>
+<td>0.5</td>
+<td>1</td>
+<td><sup>6</sup>&frasl;<sub>0</sub>.5=12</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>青パック</td>
+<td>12</td>
+<td>0.75(機械2)</td>
+<td>1</td>
+<td><sup>12</sup>&frasl;<sub>0</sub>.75=16</td>
+<td>3.75</td>
+</tr>
+
+<tr>
+<td>黒パック(軍事)</td>
+<td>10</td>
+<td>1.25</td>
+<td>2</td>
+<td><sup>10</sup>&frasl;<sub>1</sub>.25= 8</td>
+<td><sup>60</sup>&frasl;<sub>8</sub> * 2 = 15</td>
+</tr>
+
+<tr>
+<td>紫パック(生産)</td>
+<td>14</td>
+<td>1.25</td>
+<td>2</td>
+<td><sup>14</sup>&frasl;<sub>1</sub>.25=11.2</td>
+<td>10.71</td>
+</tr>
+
+<tr>
+<td>黄パック(ハイテク)</td>
+<td>14</td>
+<td>1.25</td>
+<td>2</td>
+<td><sup>14</sup>&frasl;<sub>1</sub>.25=11.1</td>
+<td>10.71</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>必要時間</th>
+<th>1秒1個煮するには・・・</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>赤パック</td>
+<td>2.5</td>
+<td>3台</td>
+</tr>
+
+<tr>
+<td>緑パック</td>
+<td>3</td>
+<td>3台</td>
+</tr>
+
+<tr>
+<td>青パック</td>
+<td>9</td>
+<td>9台</td>
+</tr>
+
+<tr>
+<td>黒パック(軍事)</td>
+<td>7.5</td>
+<td></td>
+</tr>
+
+<tr>
+<td>紫パック(生産)</td>
+<td>10.5</td>
+<td></td>
+</tr>
+
+<tr>
+<td>黄パック(ハイテク)</td>
+<td>10.5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="検証">検証</h3>
+
+
+<div class="pure-u-1">
+  <img class="pure-img" src="https://tetsuyainfra.github.io/factorio/2018-04-15-00-22-52.png" >
+</div>
+
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="https://tetsuyainfra.github.io/factorio/03_blue/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://tetsuyainfra.github.io/factorio/03_blue/">青パックを考える</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -340,13 +450,13 @@ Having nearly instant feedback enables you to have your creativity flow without 
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://tetsuyainfra.github.io/post/goisforlovers/">(Hu)go Template Primer</a>
+      <a href="https://tetsuyainfra.github.io/factorio/04_black_army/">黒パック(軍事)</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://tetsuyainfra.github.io/post/goisforlovers/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://tetsuyainfra.github.io/factorio/04_black_army/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -386,4 +496,5 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
 </body>
 </html>
+
 

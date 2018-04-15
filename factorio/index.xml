@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Factorios on tetsuyainfra 日記</title>
+    <link>https://tetsuyainfra.github.io/factorio/</link>
+    <description>Recent content in Factorios on tetsuyainfra 日記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <copyright>(c) 2018 tetsuyainfra</copyright>
+    <lastBuildDate>Sun, 15 Apr 2018 06:29:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://tetsuyainfra.github.io/factorio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>黒パック(軍事)</title>
+      <link>https://tetsuyainfra.github.io/factorio/04_black_army/</link>
+      <pubDate>Sun, 15 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/04_black_army/</guid>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレネード --</description>
+    </item>
+    
+    <item>
+      <title>研究時間について</title>
+      <link>https://tetsuyainfra.github.io/factorio/00_science/</link>
+      <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/00_science/</guid>
+      <description>参考 https://wiki.factorio.com/Research 研究に必要なコスト time = (time cost * units / labs) seconds 計算例 研究 所要時間 素材 研究時間 自動化技術 10 赤x10 100 自動化技術2 5 赤x80 400 搬送1 15 赤x20 300 搬送</description>
+    </item>
+    
+    <item>
+      <title>青パックを考える</title>
+      <link>https://tetsuyainfra.github.io/factorio/03_blue/</link>
+      <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/03_blue/</guid>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘削機 end 発</description>
+    </item>
+    
+  </channel>
+</rss>

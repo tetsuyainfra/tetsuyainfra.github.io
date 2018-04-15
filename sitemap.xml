@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/post/create-new-webapp/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tetsuyainfra.github.io/post/creating-a-new-theme/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -10,6 +20,21 @@
   <url>
     <loc>https://tetsuyainfra.github.io/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/factorio/04_black_army/</loc>
+    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/factorio/00_science/</loc>
+    <lastmod>2018-04-14T06:29:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/factorio/03_blue/</loc>
+    <lastmod>2018-04-14T06:29:04+00:00</lastmod>
   </url>
   
   <url>
@@ -44,6 +69,12 @@
   </url>
   
   <url>
+    <loc>https://tetsuyainfra.github.io/factorio/</loc>
+    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://tetsuyainfra.github.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -63,7 +94,7 @@
   
   <url>
     <loc>https://tetsuyainfra.github.io/post/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -92,7 +123,7 @@
   
   <url>
     <loc>https://tetsuyainfra.github.io/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>(c) 2018 tetsuyainfra</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tetsuyainfra.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugoでmermaid.jsをつかう</title>
+      <link>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</guid>
+      <description>1 chortcodeを使う vjeantet/hugo-theme-docdockより &amp;lt;script defer src=&amp;quot;https://unpkg.com/mermaid@7.1.2/dist/mermaid.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer&amp;gt;mermaid.initialize({startOnLoad:true});&amp;lt;/script&amp;gt; &amp;lt;div class=&amp;quot;mermaid&amp;quot; align=&amp;quot;{{ if .Get &amp;quot;align&amp;quot; }}{{ .Get &amp;quot;align&amp;quot; }}{{ else }}center{{ end }}&amp;quot; &amp;gt;{{ safeHTML .Inner }}&amp;lt;/div&amp;gt; {{ &amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt; }} //</description>
+    </item>
+    
+    <item>
+      <title>ひな形を使ってWebappを作成する</title>
+      <link>https://tetsuyainfra.github.io/post/create-new-webapp/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/post/create-new-webapp/</guid>
+      <description>もくじ 各種公式ツールを使う 1.1. React create-react-app 1.2. Vue.js vue-cli 1.3. Angular angular-cli 1.4. express express-generator scaffoldツールを使う 2.2 Yeoman 1.1 React</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>
@@ -31,6 +49,33 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>黒パック(軍事)</title>
+      <link>https://tetsuyainfra.github.io/factorio/04_black_army/</link>
+      <pubDate>Sun, 15 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/04_black_army/</guid>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレネード --</description>
+    </item>
+    
+    <item>
+      <title>研究時間について</title>
+      <link>https://tetsuyainfra.github.io/factorio/00_science/</link>
+      <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/00_science/</guid>
+      <description>参考 https://wiki.factorio.com/Research 研究に必要なコスト time = (time cost * units / labs) seconds 計算例 研究 所要時間 素材 研究時間 自動化技術 10 赤x10 100 自動化技術2 5 赤x80 400 搬送1 15 赤x20 300 搬送</description>
+    </item>
+    
+    <item>
+      <title>青パックを考える</title>
+      <link>https://tetsuyainfra.github.io/factorio/03_blue/</link>
+      <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/factorio/03_blue/</guid>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘削機 end 発</description>
     </item>
     
     <item>

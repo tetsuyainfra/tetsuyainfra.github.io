@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About me and this site">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.37.1" />
 
-  <title>About &middot; tetsuyainfra 日記</title>
+  <title>Hugoでmermaid.jsをつかう &middot; tetsuyainfra 日記</title>
 
   
   
@@ -210,39 +210,112 @@
 
 
 <div class="header">
-  <h1>About</h1>
-  <h2>About me and this site</h2>
+  <h1>Hugoでmermaid.jsをつかう</h1>
+  <h2></h2>
 </div>
 <div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>14 Apr 2018, 00:00</time>
+  </div>
+
   
 
-<p>Hugo is a static site engine written in Go.</p>
+  
 
-<p>It makes use of a variety of open source projects including:</p>
+  
 
-<ul>
-<li><a href="https://github.com/spf13/cobra">Cobra</a></li>
-<li><a href="https://github.com/spf13/viper">Viper</a></li>
-<li><a href="https://github.com/spf13/jWalterWeatherman">J Walter Weatherman</a></li>
-<li><a href="https://github.com/spf13/cast">Cast</a></li>
-</ul>
+</div>
 
-<p>Learn more and contribute on <a href="https://github.com/spf13">GitHub</a>.</p>
+  
 
-<h2 id="setup">Setup</h2>
+<h2 id="1-chortcodeを使う">1 chortcodeを使う</h2>
 
-<p>Some fun facts about <a href="http://gohugo.io/">Hugo</a>:</p>
+<p><a href="https://github.com/vjeantet/hugo-theme-docdock/blob/master/layouts/shortcodes/mermaid.html">vjeantet/hugo-theme-docdock</a>より</p>
 
-<ul>
-<li>Built in <a href="http://golang.org/">Go</a></li>
-<li>Loosely inspired by <a href="http://jekyllrb.com/">Jekyll</a></li>
-<li>Primarily developed by <a href="http://spf13.com/">spf13</a> on the train while commuting to and from Manhattan.</li>
-<li>Coded in <a href="http://vim.org">Vim</a> using <a href="http://vim.spf13.com/">spf13-vim</a></li>
-</ul>
+<pre><code class="language-html:shortcodes/mermaid.html">&lt;script defer src=&quot;https://unpkg.com/mermaid@7.1.2/dist/mermaid.js&quot;&gt;&lt;/script&gt;
+&lt;script defer&gt;mermaid.initialize({startOnLoad:true});&lt;/script&gt;
+&lt;div class=&quot;mermaid&quot; align=&quot;{{ if .Get &quot;align&quot; }}{{ .Get &quot;align&quot; }}{{ else }}center{{ end }}&quot; &gt;{{ safeHTML .Inner  }}&lt;/div&gt;
+</code></pre>
 
-<p>Have questions or suggestions? Feel free to <a href="https://github.com/spf13/hugo/issues/new">open an issue on GitHub</a> or <a href="https://twitter.com/spf13">ask me on Twitter</a>.</p>
+<pre><code class="language-md:contet/post/hoge.md">{{ &lt;mermaid align=&quot;left&quot;&gt; }} // spaceを取り除く
+graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+{{ &lt;/mermaid&gt; }}
+</code></pre>
 
-<p>Thanks for reading!</p>
+<h2 id="2-code-fenceを使う">2 Code Fenceを使う</h2>
+
+<pre><code class="language-md">    ```mermaid
+    graph LR;
+        A --- B
+        B--&gt;C[fa:fa-ban forbidden]
+        B--&gt;D(fa:fa-spinner);
+    ```
+</code></pre>
+
+<p>次のコードはドコでも良い</p>
+
+<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.js&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>後々を考えると2が良いんだけど・・・
+まあ置き換えは正規表現で簡単にできそうだから1で妥協しようか</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://tetsuyainfra.github.io/post/create-new-webapp/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://tetsuyainfra.github.io/post/create-new-webapp/">ひな形を使ってWebappを作成する</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
 </div>
 
