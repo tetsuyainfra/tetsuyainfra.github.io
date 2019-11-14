@@ -1,119 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/create-new-webapp/</loc>
-    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/creating-a-new-theme/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/factorio/</loc>
-    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/</loc>
-    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/factorio/04_black_army/</loc>
-    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/factorio/00_science/</loc>
-    <lastmod>2018-04-14T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/factorio/03_blue/</loc>
-    <lastmod>2018-04-14T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/about/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/link/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/contact/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/topics/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://tetsuyainfra.github.io/ja/sitemap.xml</loc>
+		
+	   	<lastmod>2018-04-15T06:29:04+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://tetsuyainfra.github.io/en/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>
