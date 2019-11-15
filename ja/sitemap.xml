@@ -23,13 +23,13 @@
   </url>
   
   <url>
-    <loc>https://tetsuyainfra.github.io/factorio/</loc>
-    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
+    <loc>https://tetsuyainfra.github.io/post/</loc>
+    <lastmod>2019-11-14T16:11:19+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://tetsuyainfra.github.io/</loc>
-    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
+    <lastmod>2019-11-14T16:11:19+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -40,6 +40,16 @@
                 hreflang="ja"
                 href="https://tetsuyainfra.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/post/2019-11-14_think-new-pc/</loc>
+    <lastmod>2019-11-14T16:11:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/factorio/</loc>
+    <lastmod>2018-04-15T06:29:04+00:00</lastmod>
   </url>
   
   <url>
@@ -55,11 +65,6 @@
   <url>
     <loc>https://tetsuyainfra.github.io/factorio/03_blue/</loc>
     <lastmod>2018-04-14T06:29:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tetsuyainfra.github.io/post/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>

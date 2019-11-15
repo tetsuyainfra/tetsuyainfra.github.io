@@ -18,7 +18,7 @@
       <pubDate>Sun, 15 Apr 2018 06:29:04 +0000</pubDate>
       
       <guid>https://tetsuyainfra.github.io/factorio/04_black_army/</guid>
-      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレネード --</description>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 window.addEventListener(&#34;load&#34;, function(){ mermaid.initialize({startOnLoad:true}); }, false); graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレ</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
       
       <guid>https://tetsuyainfra.github.io/factorio/03_blue/</guid>
-      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 mermaid.initialize({startOnLoad:true}); graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘削機 end 発</description>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 window.addEventListener(&#34;load&#34;, function(){ mermaid.initialize({startOnLoad:true}); }, false); graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘</description>
     </item>
     
   </channel>

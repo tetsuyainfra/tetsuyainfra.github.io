@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>(c) 2018 tetsuyainfra</copyright>
-    <lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 16:11:19 +0900</lastBuildDate>
     
 	<atom:link href="https://tetsuyainfra.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://tetsuyainfra.github.io/post/2018-04-14_hugo-mermaid/</guid>
-      <description>1 chortcodeを使う vjeantet/hugo-theme-docdockより &amp;lt;script defer src=&amp;quot;https://unpkg.com/mermaid@7.1.2/dist/mermaid.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer&amp;gt;mermaid.initialize({startOnLoad:true});&amp;lt;/script&amp;gt; &amp;lt;div class=&amp;quot;mermaid&amp;quot; align=&amp;quot;{{ if .Get &amp;quot;align&amp;quot; }}{{ .Get &amp;quot;align&amp;quot; }}{{ else }}center{{ end }}&amp;quot; &amp;gt;{{ safeHTML .Inner }}&amp;lt;/div&amp;gt; {{ &amp;lt;mermaid align=&amp;quot;left&amp;quot;&amp;gt; }} //</description>
+      <description>UPDATE: 2019-11-15 1 chortcodeを使う vjeantet/hugo-theme-docdockより &amp;lt;script src=&amp;quot;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&amp;quot; async&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script async&amp;gt; document.addEventListener(&amp;quot;load&amp;quot;, function(){ mermaid.initialize({startOnLoad:true}); }, false); &amp;lt;/script&amp;gt; &amp;lt;div class=&amp;quot;mermaid&amp;quot; align=&amp;quot;{{ if .Get &amp;quot;align&amp;quot; }}{{ .Get &amp;quot;align&amp;quot; }}{{ else }}center{{ end }}&amp;quot; &amp;gt;{{</description>
     </item>
     
     <item>
@@ -49,6 +49,15 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>新PCを考える</title>
+      <link>https://tetsuyainfra.github.io/post/2019-11-14_think-new-pc/</link>
+      <pubDate>Thu, 14 Nov 2019 16:11:19 +0900</pubDate>
+      
+      <guid>https://tetsuyainfra.github.io/post/2019-11-14_think-new-pc/</guid>
+      <description>Sandy Bridge1で7年近く頑張ってきましたがそろそろ限界です。 Sandy Bridge君を買った7年前といえば僕はCore2duoを使っていて「Cor</description>
     </item>
     
     <item>

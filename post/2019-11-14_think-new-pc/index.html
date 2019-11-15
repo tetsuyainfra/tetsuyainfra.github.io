@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.59.1" />
 
-  <title>Hugoでmermaid.jsをつかう &middot; tetsuyainfra</title>
+  <title>新PCを考える &middot; tetsuyainfra</title>
 
     
 
@@ -210,7 +210,7 @@
 
 
 <div class="header">
-  <h1>Hugoでmermaid.jsをつかう</h1>
+  <h1>新PCを考える</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -219,7 +219,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2018/04/14 00:00:00 UTC</time>
+    <time>2019/11/14 16:11:19 JST</time>
   </div>
 
   
@@ -232,97 +232,64 @@
 
   
 
-<p>UPDATE: 2019-11-15</p>
+<p>Sandy Bridge<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>で7年近く頑張ってきましたがそろそろ限界です。</p>
 
-<h2 id="1-chortcodeを使う">1 chortcodeを使う</h2>
+<p>Sandy Bridge君を買った7年前といえば僕はCore2duoを使っていて「Core2duoくんでもまだまだいけるやろー」と考えていましたが、Sandy Bridge Core i7を体験し、あっもうダメだと思ったものです。<br />
+とは言ってもその後のHDD→SATA SSDの衝撃に比べると全然でしたが。</p>
 
-<p><a href="https://github.com/vjeantet/hugo-theme-docdock/blob/master/layouts/shortcodes/mermaid.html">vjeantet/hugo-theme-docdock</a>より</p>
+<p>今回はCoffeeLake Reflesh君もSkylake-X君もZen2君も3rdGen ThreadRipper君も触っていないわけですが、なぜ買い替えを考えているか・・・</p>
 
-<pre><code class="language-html:shortcodes/mermaid.html">&lt;script src=&quot;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&quot; async&gt;&lt;/script&gt;
+<p>それはSandy Bridge君がHW的な寿命を迎えつつあるようだからなのです。</p>
 
-&lt;script async&gt;
-document.addEventListener(&quot;load&quot;, function(){
-  mermaid.initialize({startOnLoad:true});
-}, false);
-&lt;/script&gt;
+<p>というのも、最近ではPCがよく分からないままPCが再起動(ログを見るとBSOD<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>)していたり、シャットダウンのタイミングでBSOD→再起動してしまうという謎挙動をするようになりました。
+作業途中で少し休憩して戻ってくるとログイン画面(ここまでは良い)→ログインすると何も起動していないデスクトップが広がる！これは辛い。
+おうちで使っているPCなので微妙に我慢できちゃうのがつらい所。</p>
 
-&lt;div class=&quot;mermaid&quot; align=&quot;{{ if .Get &quot;align&quot; }}{{ .Get &quot;align&quot; }}{{ else }}center{{ end }}&quot; &gt;{{ safeHTML .Inner  }}&lt;/div&gt;
-</code></pre>
-
-<pre><code class="language-md:contet/post/hoge.md">{{ &lt;mermaid align=&quot;left&quot;&gt; }} // spaceを取り除く
-graph LR;
-    A[Hard edge] --&gt;|Link text| B(Round edge)
-    B --&gt; C{Decision}
-    C --&gt;|One| D[Result one]
-    C --&gt;|Two| E[Result two]
-{{ &lt;/mermaid&gt; }}
-</code></pre>
-
-<script src="https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js" async></script>
-
-<script>
-window.addEventListener("load", function(){
-  mermaid.initialize({startOnLoad:true});
-}, false);
-</script>
-
-<div class="mermaid" align="left" >
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+<div class="pure-u-1">
+  <img class="pure-img" src="https://tetsuyainfra.github.io/post/2019-11-14/event_viewer.png"  alt="イベントビューワに残された重大ログたち">
+  <div>イベントビューワに残された重大ログたち</div>
 </div>
 
-<h2 id="2-code-fenceを使う">2 Code Fenceを使う</h2>
+<h2 id="目的">目的</h2>
 
-<pre><code class="language-md">    ```mermaid
-    graph LR;
-        A --- B
-        B--&gt;C[fa:fa-ban forbidden]
-        B--&gt;D(fa:fa-spinner);
-    ```
-</code></pre>
+<ul>
+<li>Sandy Bridgeを卒業する</li>
+<li>仮想環境バリバリ使えたらいいな
 
-<pre><code class="language-mermaid">graph LR;
-    A --- B
-    B--&gt;C[fa:fa-ban forbidden]
-    B--&gt;D(fa:fa-spinner);
-</code></pre>
+<ul>
+<li>WSL(2)を快適に使える環境にする</li>
+</ul></li>
+<li>将来的にはファイルサーバーと高速に通信したい</li>
+<li>エンココード</li>
+</ul>
 
-<p>次のコードはドコでも良い</p>
+<h2 id="用語集">用語集</h2>
+<div class="footnotes">
 
-<pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&quot; async&gt;&lt;/script&gt;
-&lt;script&gt;
-window.addEventListener('load', function(){
-  mermaid.init(undefined, &quot;code.language-mermaid&quot;)
-});
-&lt;/script&gt;
-</code></pre>
+<hr />
 
-<script>
-window.addEventListener("load", function(){
-  mermaid.init(undefined, "code.language-mermaid");
-}, false);
-</script>
-
-<p>後々を考えると2が良いんだけど・・・
-まあ置き換えは正規表現で簡単にできそうだから1で妥協しようか</p>
+<ol>
+<li id="fn:1">Intel 第三世代Coreプロセッサー。名CPUで多くのSandy Bridgeおじさんを生み出した
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Blue Screen Of Death. 最近はカラフルな表示になったよね。(Windows7ぐらいでカラフルになっていたような？)
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
   <h4><i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2018-04-14_hugo-mermaid%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftetsuyainfra.github.io%2fpost%2f2019-11-14_think-new-pc%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -354,13 +321,13 @@ window.addEventListener("load", function(){
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://tetsuyainfra.github.io/post/create-new-webapp/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://tetsuyainfra.github.io/post/goisforlovers/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://tetsuyainfra.github.io/post/create-new-webapp/">ひな形を使ってWebappを作成する</a>
+      <a href="https://tetsuyainfra.github.io/post/goisforlovers/">(Hu)go Template Primer</a>
     </nav>
     
   </div>
@@ -369,8 +336,14 @@ window.addEventListener("load", function(){
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="https://tetsuyainfra.github.io/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://tetsuyainfra.github.io/post/migrate-from-jekyll/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
