@@ -53,6 +53,10 @@
   <link rel="shortcut icon" href="https://tetsuyainfra.github.io/img/favicon.ico" type="image/x-icon" />
 
   
+    
+        <link rel="stylesheet" href="https://tetsuyainfra.github.io/css/my-blackburn.css">
+    
+  
   
 
 </head>
@@ -237,18 +241,27 @@
 <p>Sandy Bridge君を買った7年前といえば僕はCore2duoを使っていて「Core2duoくんでもまだまだいけるやろー」と考えていましたが、Sandy Bridge Core i7を体験し、あっもうダメだと思ったものです。<br />
 とは言ってもその後のHDD→SATA SSDの衝撃に比べると全然でしたが。</p>
 
-<p>今回はCoffeeLake Reflesh君もSkylake-X君もZen2君も3rdGen ThreadRipper君も触っていないわけですが、なぜ買い替えを考えているか・・・</p>
+<p>今回はCoffeeLake Reflesh<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>君もSkylake-X<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>君もZen2<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup>君も3rdGen ThreadRipper<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup>君も触っていないわけですが、なぜ買い替えを考えているか・・・</p>
 
 <p>それはSandy Bridge君がHW的な寿命を迎えつつあるようだからなのです。</p>
 
-<p>というのも、最近ではPCがよく分からないままPCが再起動(ログを見るとBSOD<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>)していたり、シャットダウンのタイミングでBSOD→再起動してしまうという謎挙動をするようになりました。
-作業途中で少し休憩して戻ってくるとログイン画面(ここまでは良い)→ログインすると何も起動していないデスクトップが広がる！これは辛い。
+<p>というのも、最近ではPCがよく分からないままPCが再起動(ログを見るとBSOD<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">6</a></sup>)していたり、シャットダウンのタイミングでBSOD→再起動してしまうという謎挙動をするようになりました。
+作業途中で少し休憩して戻ってきていざログイン→何も起動していないデスクトップが広がる！これは辛い。
 おうちで使っているPCなので微妙に我慢できちゃうのがつらい所。</p>
 
 <div class="pure-u-1">
-  <img class="pure-img" src="https://tetsuyainfra.github.io/post/2019-11-14/event_viewer.png"  alt="イベントビューワに残された重大ログたち">
-  <div>イベントビューワに残された重大ログたち</div>
-</div>
+  <a href="https://tetsuyainfra.github.io/post/2019-11-14/event_viewer.png">
+    <img class="pure-img" src="https://tetsuyainfra.github.io/post/2019-11-14/event_viewer.png" >
+  </a>
+  
+  <div class="post-img-meta ">
+    <h3>イベントビューワに残された重大ログたち</h3>
+  </div>
+  
+
+<p></div></p>
+
+<p>というわけで、新PCの購入を検討する。</p>
 
 <h2 id="目的">目的</h2>
 
@@ -260,19 +273,32 @@
 <li>WSL(2)を快適に使える環境にする</li>
 </ul></li>
 <li>将来的にはファイルサーバーと高速に通信したい</li>
-<li>エンココード</li>
+<li>ライブストリーミングで低負荷エンココードしたい</li>
 </ul>
 
-<h2 id="用語集">用語集</h2>
+<h2 id="具体的な数値化-情報">具体的な数値化/情報</h2>
+
+<h2 id="threadripper">ThreadRipper</h2>
+
+<p>3900Xが出ればなぁー
+どの世代のThreadRipperも発売後、新製品出ていない</p>
 <div class="footnotes">
 
 <hr />
 
 <ol>
-<li id="fn:1">Intel 第三世代Coreプロセッサー。名CPUで多くのSandy Bridgeおじさんを生み出した
+<li id="fn:1">SandyBridge:        Intel 第2世代Coreプロセッサー。名CPUで多くのSandy Bridgeおじさんを生み出した。
  <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">Blue Screen Of Death. 最近はカラフルな表示になったよね。(Windows7ぐらいでカラフルになっていたような？)
+<li id="fn:2">CoffeeLake Refresh: Intel 第9世代Coreプロセッサー。Zen2が出るまでこれ一択だった。Zen、Zen+は遅かったのだ・・・。
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">Skylake-X         : Intel 第9世代CoreXプロセッサー。HEDT向け。
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">Zen2              : おもにAMD 第3世代Ryzenで採用されているアーキテクチャ。CoffeeLakeとついでにSkylake-Xまでぶち抜いたすごい子。
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">3rd gen ThreadRipper: Zen2を採用した第3世代ThreadRipper。HEDT向けプロセッサー。
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+<li id="fn:6">Blue Screen Of Death. 最近はカラフルな表示になったよね。(Windows7ぐらいでカラフルになっていたような？)
+ <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
 </ol>
 </div>
 
