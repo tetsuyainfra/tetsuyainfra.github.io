@@ -6,7 +6,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.61.0" />
 
   <title>研究時間について &middot; tetsuyainfra</title>
 
@@ -235,19 +235,12 @@
 
 </div>
 
-  
-
-<h1 id="参考">参考</h1>
-
+  <h1 id="heading">参考</h1>
 <p><a href="https://wiki.factorio.com/Research">https://wiki.factorio.com/Research</a></p>
-
-<h2 id="研究に必要なコスト">研究に必要なコスト</h2>
-
+<h2 id="heading-1">研究に必要なコスト</h2>
 <pre><code>time = (time cost * units / labs) seconds
 </code></pre>
-
-<h3 id="計算例">計算例</h3>
-
+<h3 id="heading-2">計算例</h3>
 <table>
 <thead>
 <tr>
@@ -257,7 +250,6 @@
 <th>研究時間</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>自動化技術</td>
@@ -265,28 +257,24 @@
 <td>赤x10</td>
 <td><strong>100</strong></td>
 </tr>
-
 <tr>
 <td>自動化技術2</td>
 <td>5</td>
 <td>赤x80</td>
 <td><strong>400</strong></td>
 </tr>
-
 <tr>
 <td>搬送1</td>
 <td>15</td>
 <td>赤x20</td>
 <td><strong>300</strong></td>
 </tr>
-
 <tr>
 <td>搬送1</td>
 <td>30</td>
 <td>赤緑x200</td>
 <td><strong>6000</strong></td>
 </tr>
-
 <tr>
 <td>ロケットサイロ</td>
 <td>60</td>
@@ -295,19 +283,15 @@
 </tr>
 </tbody>
 </table>
-
 <p>クリアめがけてとんでもない数が必要なんだなぁ</p>
-
-<h3 id="各サイエンスパックの生産個数">各サイエンスパックの生産個数</h3>
-
+<h3 id="heading-3">各サイエンスパックの生産個数</h3>
 <ul>
 <li>研究毎に同数づつ必要なので出力が同数になるべきである
-
 <ul>
 <li>加えて言うなら1秒1個になるように計算すると楽</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -319,64 +303,57 @@
 <th>生産数/min</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>赤パック</td>
 <td>5</td>
 <td>0.5(機械1)</td>
 <td>1</td>
-<td><sup>5</sup>&frasl;<sub>0</sub>.5=10</td>
+<td>5/0.5=10</td>
 <td>6</td>
 </tr>
-
 <tr>
 <td>緑パック</td>
 <td>6</td>
 <td>0.5</td>
 <td>1</td>
-<td><sup>6</sup>&frasl;<sub>0</sub>.5=12</td>
+<td>6/0.5=12</td>
 <td>5</td>
 </tr>
-
 <tr>
 <td>青パック</td>
 <td>12</td>
 <td>0.75(機械2)</td>
 <td>1</td>
-<td><sup>12</sup>&frasl;<sub>0</sub>.75=16</td>
+<td>12/0.75=16</td>
 <td>3.75</td>
 </tr>
-
 <tr>
 <td>黒パック(軍事)</td>
 <td>10</td>
 <td>1.25</td>
 <td>2</td>
-<td><sup>10</sup>&frasl;<sub>1</sub>.25= 8</td>
-<td><sup>60</sup>&frasl;<sub>8</sub> * 2 = 15</td>
+<td>10/1.25= 8</td>
+<td>60/8 * 2 = 15</td>
 </tr>
-
 <tr>
 <td>紫パック(生産)</td>
 <td>14</td>
 <td>1.25</td>
 <td>2</td>
-<td><sup>14</sup>&frasl;<sub>1</sub>.25=11.2</td>
+<td>14/1.25=11.2</td>
 <td>10.71</td>
 </tr>
-
 <tr>
 <td>黄パック(ハイテク)</td>
 <td>14</td>
 <td>1.25</td>
 <td>2</td>
-<td><sup>14</sup>&frasl;<sub>1</sub>.25=11.1</td>
+<td>14/1.25=11.1</td>
 <td>10.71</td>
 </tr>
 </tbody>
 </table>
-
 <table>
 <thead>
 <tr>
@@ -385,38 +362,32 @@
 <th>1秒1個煮するには・・・</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>赤パック</td>
 <td>2.5</td>
 <td>3台</td>
 </tr>
-
 <tr>
 <td>緑パック</td>
 <td>3</td>
 <td>3台</td>
 </tr>
-
 <tr>
 <td>青パック</td>
 <td>9</td>
 <td>9台</td>
 </tr>
-
 <tr>
 <td>黒パック(軍事)</td>
 <td>7.5</td>
 <td></td>
 </tr>
-
 <tr>
 <td>紫パック(生産)</td>
 <td>10.5</td>
 <td></td>
 </tr>
-
 <tr>
 <td>黄パック(ハイテク)</td>
 <td>10.5</td>
@@ -424,15 +395,9 @@
 </tr>
 </tbody>
 </table>
-
-<h3 id="検証">検証</h3>
-
-<div class="pure-u-1">
-  <a href="https://tetsuyainfra.github.io/factorio/2018-04-15-00-22-52.png">
-    <img class="pure-img" src="https://tetsuyainfra.github.io/factorio/2018-04-15-00-22-52.png" >
-  </a>
-  
-</div>
+<h3 id="heading-4">検証</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 
   

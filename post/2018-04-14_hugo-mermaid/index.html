@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.61.0" />
 
   <title>Hugoでmermaid.jsをつかう &middot; tetsuyainfra</title>
 
@@ -234,35 +234,26 @@
 
 </div>
 
-  
-
-<p>UPDATE: 2019-11-15</p>
-
-<h2 id="1-chortcodeを使う">1 chortcodeを使う</h2>
-
+  <p>UPDATE: 2019-11-15</p>
+<h2 id="1-chortcode">1 chortcodeを使う</h2>
 <p><a href="https://github.com/vjeantet/hugo-theme-docdock/blob/master/layouts/shortcodes/mermaid.html">vjeantet/hugo-theme-docdock</a>より</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html:shortcodes/mermaid.html" data-lang="html:shortcodes/mermaid.html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&#34;</span> <span style="color:#a6e22e">async</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 
-<pre><code class="language-html:shortcodes/mermaid.html">&lt;script src=&quot;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&quot; async&gt;&lt;/script&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span>&gt;
+document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, <span style="color:#66d9ef">function</span>(){
+  <span style="color:#a6e22e">mermaid</span>.<span style="color:#a6e22e">initialize</span>({<span style="color:#a6e22e">startOnLoad</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>});
+}, <span style="color:#66d9ef">false</span>);
+&lt;/<span style="color:#f92672">script</span>&gt;
 
-&lt;script async&gt;
-document.addEventListener(&quot;load&quot;, function(){
-  mermaid.initialize({startOnLoad:true});
-}, false);
-&lt;/script&gt;
-
-&lt;div class=&quot;mermaid&quot; align=&quot;{{ if .Get &quot;align&quot; }}{{ .Get &quot;align&quot; }}{{ else }}center{{ end }}&quot; &gt;{{ safeHTML .Inner  }}&lt;/div&gt;
-</code></pre>
-
-<pre><code class="language-md:contet/post/hoge.md">{{ &lt;mermaid align=&quot;left&quot;&gt; }} // spaceを取り除く
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mermaid&#34;</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ if .Get &#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">{</span><span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">{</span><span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">}</span><span style="color:#a6e22e">center</span><span style="color:#960050;background-color:#1e0010">{</span><span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">}</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;{{ safeHTML .Inner  }}&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md:contet/post/hoge.md" data-lang="md:contet/post/hoge.md">{{ &lt;mermaid align=&#34;left&#34;&gt; }} // spaceを取り除く
 graph LR;
     A[Hard edge] --&gt;|Link text| B(Round edge)
     B --&gt; C{Decision}
     C --&gt;|One| D[Result one]
     C --&gt;|Two| E[Result two]
 {{ &lt;/mermaid&gt; }}
-</code></pre>
-
-<script src="https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js" async></script>
+</code></pre></div><script src="https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js" async></script>
 
 <script>
 window.addEventListener("load", function(){
@@ -277,39 +268,26 @@ graph LR;
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
 </div>
-
-<h2 id="2-code-fenceを使う">2 Code Fenceを使う</h2>
-
-<pre><code class="language-md">    ```mermaid
+<h2 id="2-code-fence">2 Code Fenceを使う</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">    ```mermaid
     graph LR;
         A --- B
         B--&gt;C[fa:fa-ban forbidden]
         B--&gt;D(fa:fa-spinner);
     ```
-</code></pre>
-
-<pre><code class="language-mermaid">graph LR;
+</code></pre></div><pre><code class="language-mermaid" data-lang="mermaid">graph LR;
     A --- B
     B--&gt;C[fa:fa-ban forbidden]
     B--&gt;D(fa:fa-spinner);
-</code></pre>
-
-<p>次のコードはドコでも良い</p>
-
-<pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&quot; async&gt;&lt;/script&gt;
-&lt;script&gt;
-window.addEventListener('load', function(){
-  mermaid.init(undefined, &quot;code.language-mermaid&quot;)
+</code></pre><p>次のコードはドコでも良い</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js&#34;</span> <span style="color:#a6e22e">async</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span>&gt;
+window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;load&#39;</span>, <span style="color:#66d9ef">function</span>(){
+  <span style="color:#a6e22e">mermaid</span>.<span style="color:#a6e22e">init</span>(<span style="color:#66d9ef">undefined</span>, <span style="color:#e6db74">&#34;code.language-mermaid&#34;</span>)
 });
-&lt;/script&gt;
-</code></pre>
-
-<script>
-window.addEventListener("load", function(){
-  mermaid.init(undefined, "code.language-mermaid");
-}, false);
-</script>
-
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>後々を考えると2が良いんだけど・・・
 まあ置き換えは正規表現で簡単にできそうだから1で妥協しようか</p>
 
