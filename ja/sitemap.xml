@@ -28,21 +28,6 @@
   </url>
   
   <url>
-    <loc>https://tetsuyainfra.github.io/</loc>
-    <lastmod>2019-11-14T16:11:19+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tetsuyainfra.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tetsuyainfra.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://tetsuyainfra.github.io/post/2019-11-14_think-new-pc/</loc>
     <lastmod>2019-11-14T16:11:19+09:00</lastmod>
   </url>
@@ -75,6 +60,21 @@
   <url>
     <loc>https://tetsuyainfra.github.io/link/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tetsuyainfra.github.io/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tetsuyainfra.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tetsuyainfra.github.io/"
+                />
   </url>
   
   <url>
