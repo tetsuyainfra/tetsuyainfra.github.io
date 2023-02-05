@@ -7,18 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
     <copyright>(c) 2018 tetsuyainfra</copyright>
-    <lastBuildDate>Sun, 15 Apr 2018 06:29:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://tetsuyainfra.github.io/factorio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 15 Apr 2018 06:29:04 +0000</lastBuildDate><atom:link href="https://tetsuyainfra.github.io/factorio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>黒パック(軍事)</title>
       <link>https://tetsuyainfra.github.io/factorio/04_black_army/</link>
       <pubDate>Sun, 15 Apr 2018 06:29:04 +0000</pubDate>
       
       <guid>https://tetsuyainfra.github.io/factorio/04_black_army/</guid>
-      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 window.addEventListener(&#34;load&#34;, function(){ mermaid.initialize({startOnLoad:true}); }, false); graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレ</description>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 graph LR; GOAL[&#34;黒パックx2&#34;] style GOAL stroke:red,stroke-width:4px subgraph 最終ライン グレネード ガンタレット 貫通弾薬 end subgraph 素材ライン 石炭 鉄板 銅板 鋼材 end グレネード --&gt; GOAL</description>
     </item>
     
     <item>
@@ -36,7 +32,7 @@
       <pubDate>Sat, 14 Apr 2018 06:29:04 +0000</pubDate>
       
       <guid>https://tetsuyainfra.github.io/factorio/03_blue/</guid>
-      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 window.addEventListener(&#34;load&#34;, function(){ mermaid.initialize({startOnLoad:true}); }, false); graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘</description>
+      <description>参考 https://wiki.factorio.com/Main_Page 必要素材 graph LR; GOAL[&#34;青パック&#34;] style GOAL stroke:red,stroke-width:4px subgraph 素材ライン 鉄板 銅板 プラスチック棒 鋼材 end subgraph 最終ライン 発展基板 エンジンユニット 電動掘削機 end 発展</description>
     </item>
     
   </channel>

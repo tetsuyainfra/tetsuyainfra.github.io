@@ -6,10 +6,6 @@
     <description>Recent content on tetsuyainfra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <copyright>(c) 2018 tetsuyainfra</copyright>
-    
-	<atom:link href="https://tetsuyainfra.github.io/en/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>(c) 2018 tetsuyainfra</copyright><atom:link href="https://tetsuyainfra.github.io/en/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

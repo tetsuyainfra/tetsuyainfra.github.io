@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="tetsuyainfra&#39;s diary">
   <meta name="generator" content="Hugo 0.110.0">
 
-  <title>青パックを考える &middot; tetsuyainfra</title>
+  <title>Categories &middot; tetsuyainfra</title>
 
     
 
@@ -42,6 +41,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
+  
+  <link rel="alternate" type="application/rss+xml" title="tetsuyainfra"
+    href='https://tetsuyainfra.github.io/categories/index.xml' />
   
 
   
@@ -116,6 +118,11 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='https://tetsuyainfra.github.io/categories/index.xml'><i
+          class="fas fa-rss"></i>RSS</a>
+    </li>
     
 
     
@@ -215,204 +222,23 @@
 
 
 <div class="header">
-  <h1>青パックを考える</h1>
-  <h2></h2>
+  <h1>Categories</h1>
 </div>
 <div class="content">
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2018/04/14 06:29:04 UTC</time>
-  </div>
-
+  <ul>
   
-
   
-
+    <li>
+      <a href="development">development</a>
+      <span>&#40;2&#41;</span>
+    </li>
   
-
-</div>
-
-  <h1 id="参考">参考</h1>
-<p><a href="https://wiki.factorio.com/Main_Page">https://wiki.factorio.com/Main_Page</a></p>
-<h1 id="必要素材">必要素材</h1>
-<script src="https://unpkg.com/mermaid@8.4.2/dist/mermaid.min.js" async></script>
-
-<script>
-window.addEventListener("load", function(){
-  mermaid.initialize({startOnLoad:true});
-}, false);
-</script>
-
-<div class="mermaid" align="left" >
-graph LR;
-  GOAL["青パック"]
-  style GOAL stroke:red,stroke-width:4px
-
-  subgraph 素材ライン
-    鉄板
-    銅板
-    プラスチック棒
-    鋼材
-  end
-  subgraph 最終ライン
-    発展基板
-    エンジンユニット
-    電動掘削機
-  end
-
-  発展基板 --> GOAL
-    プラスチック棒 -- x2 --> 発展基板
-    銅線           -- x4 --> 発展基板
-    電子基板       -- x2 --> 発展基板
-
-    鉄板       --> 電子基板
-    銅線 -- x3 --> 電子基板
-    銅板       --> 銅線
-
-  エンジンユニット --> GOAL
-    鋼材         --> エンジンユニット
-    鉄の歯車     --> エンジンユニット
-    パイプ -- x2 --> エンジンユニット
-    鉄板   -- x2 --> 鉄の歯車
-    鉄板         --> パイプ
-
-  電動掘削機 --> GOAL
-    鉄板     -- x10 --> 電動掘削機
-    鉄の歯車 -- x5 --> 電動掘削機
-    電子基板 -- x3 --> 電動掘削機
-</div>
-<table>
-<thead>
-<tr>
-<th>名前</th>
-<th>製作時間</th>
-<th>製作速度</th>
-<th>必要時間</th>
-<th>生産数/min</th>
-<th>生産量 1個/2sec</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>青パック</td>
-<td>12</td>
-<td>0.75</td>
-<td>16</td>
-<td></td>
-<td>8台</td>
-</tr>
-<tr>
-<td>発展基板</td>
-<td>6</td>
-<td>0.75</td>
-<td>8</td>
-<td></td>
-<td>4</td>
-</tr>
-<tr>
-<td>エンジンユニット</td>
-<td>10</td>
-<td>0.75</td>
-<td>12.5</td>
-<td></td>
-<td>6.25</td>
-</tr>
-<tr>
-<td>電動掘削機</td>
-<td>2</td>
-<td>0.75</td>
-<td>2.666</td>
-<td>22.5</td>
-<td>1.333</td>
-</tr>
-<tr>
-<td>パイプ</td>
-<td>0.5</td>
-<td>0.5</td>
-<td>1</td>
-<td>60</td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>鉄の歯車</td>
-<td>0.5</td>
-<td>0.5</td>
-<td>1</td>
-<td>60</td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>電子基板</td>
-<td>0.5</td>
-<td>0.5</td>
-<td>1</td>
-<td>60</td>
-<td>0.5</td>
-</tr>
-<tr>
-<td>銅線</td>
-<td>0.5</td>
-<td>0.5</td>
-<td>1</td>
-<td>60</td>
-<td>0.5</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+    <li>
+      <a href="golang">golang</a>
+      <span>&#40;2&#41;</span>
+    </li>
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://tetsuyainfra.github.io/factorio/00_science/">研究時間について</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://tetsuyainfra.github.io/factorio/00_science/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
-
-  
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'Your Disqus shortname';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
+  </ul>
 </div>
 
 </div>
@@ -442,5 +268,3 @@ graph LR;
 
 </body>
 </html>
-
-
