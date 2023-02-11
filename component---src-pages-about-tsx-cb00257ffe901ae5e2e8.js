@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkblog_tetsuyainfra=self.webpackChunkblog_tetsuyainfra||[]).push([[49],{2766:function(t,e,u){u.r(e),u.d(e,{Head:function(){return r}});var i=u(6865),a=u(4001),n=u(917);const r=()=>(0,n.tZ)(a.Z,{title:"About Me"});e.default=()=>(0,n.tZ)(i.Z,{pageTitle:"About Me"},(0,n.tZ)("p",null,"Hi there! I'm the proud creator of this site, which I built with Gatsby."))}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-cb00257ffe901ae5e2e8.js.map
